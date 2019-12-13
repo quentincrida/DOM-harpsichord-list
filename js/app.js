@@ -34,6 +34,8 @@ const createInstrumentListItem = function (form) {
   manuals.textContent = `Number of manuals: ${form.manuals.value}`;
   instrumentListItem.appendChild(manuals);
 
+  
+
   return instrumentListItem;
 }
 
