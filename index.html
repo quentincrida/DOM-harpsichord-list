@@ -11,29 +11,31 @@
   <form id="new-item-form">
     <div id="form-wrapper">
       <div class="form-item">
-        <lable for="instrument" class="primary">Instrument</lable>
+        <label for="instrument" class="primary">Instrument</label>
         <input type="text" id="instrument" required/>
     </div>
 
     <div class="form-item">
-      <label for="nationality" class="primary">Nationality</label>
+      <label for="nationality" class="primary">Country of Origin</label>
       <input type="text" id="Nationality" required/>
     </div>
 
     <div class="form-item">
-      <label for="manuals" class="primary">Manuals</label>
+      <label for="manuals" class="primary">Manual</label>
       <select id="manuals"> disabled selected
-      <option value="" disabled selected>Choose number of manuals</option>
+      <option value="" disabled selected>Select number of manuals</option>
         <option value="Single">Single</option>
         <option value="Double">Double</option>
+        <option value="Triple">Triple</option>
         </select>
       </div>
     </div>
-    <input type="submit" value="save"/>
+    <input type="submit" value="Save"/>
 </form>
 
 <button id="delete-all">Delete All</button>
 
 <h1>Baroque Keyboards List</h1>
+<ul id ="instrument-list"></ul>
 </body>
 </html>
