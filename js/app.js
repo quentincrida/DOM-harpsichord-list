@@ -26,10 +26,13 @@ const createInstrumentListItem = function (form) {
   instrument.textContent = `Instrument: ${form.instrument.value}`;
   instrumentListItem.appendChild(instrument);
 
-  const nationality = document.createElement('h2');
+  const nationality = document.createElement('h3');
   nationality.textContent = `Country of Origin: ${form.nationality.value}`;
   instrumentListItem.appendChild(nationality);
 
+  const manuals = document.createElement('h3');
+  manuals.textContent = `Number of manuals: ${form.manuals.value}`;
+  instrumentListItem.appendChild(manuals);
 
   return instrumentListItem;
 }
