@@ -1,8 +1,9 @@
 document.addEventListener('DOMContentLoaded', () => {
+  console.log("Instruments have landed");
   const newItemForm = document.querySelector('#new-item-form');
   newItemForm.addEventListener('submit', handleNewItemFormSubmit);
 
-  const deleteAllButton = docment.querySelector('#delete-all');
+  const deleteAllButton = document.querySelector('#delete-all');
   deleteAllButton.addEventListener('click', handleDeleteAllClick);
 
 })
@@ -23,5 +24,16 @@ const createInstrumentListItem = function (form) {
 
   const instrument = document.createElement('h2');
   instrument.textContent = form.instrument.value;
-  
+  instrumentListItem.appendChild(instrument);
+
+  return instrumentListItem;
+}
+
+
+
+
+
+const handleDeleteAllClick = function (event) {
+  const instrumentList = document.querySelector('#instrument-list');
+  instrumentList.innerHTML = '';
 }
