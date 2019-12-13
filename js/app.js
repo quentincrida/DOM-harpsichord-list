@@ -23,8 +23,13 @@ const createInstrumentListItem = function (form) {
   instrumentListItem.classList.add('instrument-list-item');
 
   const instrument = document.createElement('h2');
-  instrument.textContent = form.instrument.value;
+  instrument.textContent = `Instrument: ${form.instrument.value}`;
   instrumentListItem.appendChild(instrument);
+
+  const nationality = document.createElement('h2');
+  nationality.textContent = `Country of Origin: ${form.nationality.value}`;
+  instrumentListItem.appendChild(nationality);
+
 
   return instrumentListItem;
 }
