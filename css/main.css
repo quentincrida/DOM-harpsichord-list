@@ -1,9 +1,10 @@
 body{
-font-family: snell roundhand, cursive;
+font-family: apple chancery, cursive;
+margin: 20px;
 }
 
 #form-wrapper {
-width: 100%;
+  width: 100%;
   display: flex;
   flex-direction: row;
 }
@@ -16,5 +17,6 @@ width: 100%;
 
 #instrument-list-item {
   margin: 0.75rem 0.75rem;
+
 
 }

@@ -34,8 +34,12 @@ const createInstrumentListItem = function (form) {
   manuals.textContent = `Number of manuals: ${form.manuals.value}`;
   instrumentListItem.appendChild(manuals);
 
+  const authenticity = document.createElement('h4');
+  authenticity.textContent = `Authenticity level: ${form.authenticity.value}`;
+  instrumentListItem.appendChild(authenticity);
+
   const luteStop = document.createElement('li');
-  luteStop.textContent = `Has Lute Stop: ${form.luteStop.value}`;
+  luteStop.textContent = `Has Lute Stop: ${form.lutestop.value}`;
   instrumentListItem.appendChild(luteStop);
 
 
