@@ -31,15 +31,19 @@ const createInstrumentListItem = function (form) {
   instrumentListItem.appendChild(nationality);
 
   const manuals = document.createElement('h3');
-  manuals.textContent = `Number of manuals: ${form.manuals.value}`;
+  manuals.textContent = `Number of Manuals: ${form.manuals.value}`;
   instrumentListItem.appendChild(manuals);
 
   const authenticity = document.createElement('h4');
   authenticity.textContent = `Authenticity level: ${form.authenticity.value}`;
   instrumentListItem.appendChild(authenticity);
 
+  const decorated = document.createElement('h4');
+  decorated.textContent = `Level of Decoration: ${form.decorated.value}`;
+  instrumentListItem.appendChild(decorated);
+
   const luteStop = document.createElement('h4');
-  luteStop.textContent = `Has Lute Stop: ${form.lutestop.value}`;
+  luteStop.textContent = `Lute Stop: ${form.lutestop.value}`;
   instrumentListItem.appendChild(luteStop);
 
 
