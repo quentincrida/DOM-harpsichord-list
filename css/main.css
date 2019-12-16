@@ -1,7 +1,6 @@
 body{
 font-family: apple chancery, cursive;
 margin: 60px 40px;
-color: black;
 background-color: orange;
 
 }
@@ -29,4 +28,27 @@ h1 {
 
 p {
   color: green;
+}
+
+}
+
+
+#instrument-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+
+}
+
+.instrument-list-item {
+  margin: 0.5rem 0.5rem;
+  padding: 0.5rem 0.8rem;
+  border: 1px solid #20437c;
+  border-radius: 5%;
+  background: maroon;
+  color: green;
+}
+
+ul {
+  list-style: none;
 }
